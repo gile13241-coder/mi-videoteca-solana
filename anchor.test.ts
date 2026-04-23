@@ -1,4 +1,4 @@
-// No se necesitan imports: web3, anchor, pg y más están disponibles globalmente en Solana Playground
+
 
 describe("Mi Videoteca", () => {
 
