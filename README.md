@@ -19,20 +19,20 @@ Construido con **Rust + Anchor** desde Solana Playground.
 
 ## ¿Cómo usarlo en Solana Playground?
 
-### 1️⃣ Importa el proyecto
+###  Importa el proyecto
 Ve a [https://beta.solpg.io/](https://beta.solpg.io/) y pega la URL de este repositorio.
 
-### 2️⃣ Conéctate a Devnet
+###  Conéctate a Devnet
 Haz clic en **"Not Connected"** → **Continue**. Se creará una wallet automáticamente.
 
-### 3️⃣ Haz Build
+###  Haz Build
 Haz clic en el botón **Build** (ícono de martillo 🔨). Espera a que compile.
 
-### 4️⃣ Haz Deploy
+###  Haz Deploy
 Haz clic en **Deploy**. Esto sube tu programa a la Devnet de Solana.
 
-### 5️⃣ Corre los Tests
-Haz clic en el ícono de pruebas (🧪) y corre los tests en orden:
+### Corre los Tests
+Haz clic en el ícono de pruebas y corre los tests en orden:
 1. `crear_videoteca`
 2. `agregar_juego`
 3. `alternar_completado`
@@ -43,18 +43,7 @@ Haz clic en el ícono de pruebas (🧪) y corre los tests en orden:
 
 ## Estructura del proyecto
 
-```
-mi-videoteca/
-├── src/
-│   └── lib.rs              ← Programa principal en Rust (on-chain)
-├── tests/
-│   └── anchor.test.ts      ← Tests en TypeScript
-├── client/
-│   └── client.ts           ← Cliente para verificar wallet y videoteca
-└── README.md
-```
 
----
 
 ## Datos de cada videojuego
 
@@ -69,7 +58,4 @@ pub struct Videojuego {
 
 ---
 
-## Seguridad
 
-- Solo el **owner** (dueño) puede agregar, eliminar o modificar juegos.
-- La videoteca es una **PDA** única por wallet — nadie más puede acceder a ella.
