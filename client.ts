@@ -19,12 +19,12 @@ console.log("Bump:", bump);
 // Intentamos leer la videoteca si ya fue creada
 try {
   const videoteca = await pg.program.account.videoteca.fetch(videotecaPDA);
-  console.log("\n📚 Tu videoteca existe:");
+  console.log("\n Tu videoteca existe:");
   console.log("  Nombre:", videoteca.nombre);
   console.log("  Juegos guardados:", videoteca.juegos.length);
   videoteca.juegos.forEach((juego, i) => {
-    console.log(`  [${i + 1}] ${juego.nombre} (${juego.genero}, ${juego.anio}) - ${juego.completado ? "✅ Completado" : "⏳ Pendiente"}`);
+    console.log(`  [${i + 1}] ${juego.nombre} (${juego.genero}, ${juego.anio}) - ${juego.completado ? " Completado" : " Pendiente"}`);
   });
 } catch (e) {
-  console.log("\n⚠️  Tu videoteca aún no ha sido creada. Ejecuta el test 'crear_videoteca' primero.");
+  console.log("\n  Tu videoteca aún no ha sido creada. Ejecuta el test 'crear_videoteca' primero.");
 }
