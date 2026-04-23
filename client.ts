@@ -1,5 +1,4 @@
 // Client - Mi Videoteca en Solana
-// Ejecuta esto en Solana Playground para verificar tu wallet y balance
 
 console.log("🎮 Mi Videoteca - Solana Program");
 console.log("================================");
